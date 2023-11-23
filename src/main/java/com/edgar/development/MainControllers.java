@@ -15,7 +15,7 @@ public class MainControllers {
 	
 	@GetMapping()
 	public String invokeEndpoint() {
-		String url = "https://hsbc.local:8443";
+		String url = "https://hsbc.local";
         return restTemplate.getForObject(url, String.class);
 	}
 
